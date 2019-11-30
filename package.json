@@ -1,0 +1,42 @@
+{
+   "name": "bratish",
+   "version": "0.0.1",
+   "description": "Awesome project developed with TypeORM.",
+   "devDependencies": {
+      "@babel/cli": "^7.7.4",
+      "@babel/core": "^7.7.4",
+      "@babel/node": "^7.7.4",
+      "@babel/preset-env": "^7.7.4",
+      "@types/node": "^8.0.29",
+      "babel-preset-env": "^1.7.0",
+      "babel-preset-react": "^6.24.1",
+      "nodemon": "^2.0.1",
+      "parcel-bundler": "^1.12.4",
+      "sass": "^1.23.7",
+      "ts-node": "3.3.0",
+      "ts-node-dev": "^1.0.0-pre.44",
+      "typescript": "3.3.3333"
+   },
+   "dependencies": {
+      "axios": "^0.19.0",
+      "babel-polyfill": "^6.26.0",
+      "body-parser": "^1.18.1",
+      "bootstrap": "^4.4.1",
+      "cors": "^2.8.5",
+      "dotenv": "^8.2.0",
+      "express": "^4.15.4",
+      "jquery": "^3.4.1",
+      "mysql2": "^2.0.1",
+      "popper.js": "^1.16.0",
+      "react": "^16.12.0",
+      "react-dom": "^16.12.0",
+      "reflect-metadata": "^0.1.10",
+      "typeorm": "^0.2.20"
+   },
+   "scripts": {
+      "start-server": "nodemon build/index.js",
+      "watch-server": "tsc -w",
+      "start-client": "parcel src/client/index.html --out-dir build/client",
+      "build-client": "parcel build src/client/index.html --no-source-maps --out-dir build/client --public-url ./"
+   }
+}
